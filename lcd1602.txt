@@ -1,0 +1,50 @@
+
+The most common LCD (liquid crystal display) component is the LCD1602 which is a alphanumeric device displaying text against a lighted background. Display is in 2 rows, each with 16 
+column characters.\\n
+Most LCD's compatible with the Arduino has the Hitachi's HD44780 which functions as a dot matrix, controller and driver. To understand more on how the display is done in the matrix 
+of cystals in your LCD, you can refer to the HD44780's datasheet from the link provided. Understanding will be helpful later when you embark on more challenging projects.\n
+Interfacing with the Arduino is through the 16 pins on the HD44780 on the LCD1602.\n
+
+
+
+
+
+
+ DESCRIPTION
+THERE IS DIFFERENCE BETWEEN I1C AND I2C
+
+It is another great BLUE backlight LCD display.
+This is IIC Serial 16X2 LCD module .
+With this I2C interface LCD module, you will be able to realize data display via only 4 wires.
+If you already has I2C devices in your project, this LCD module actually cost no more resources at all.
+It is fantastic for Arduino based project
+
+SPECIFICATIONS
+
+Interface: I2C
+SDA (DATA) - analog input pin 4
+SCL (CLOCK) - analog input pin 5
+Pin Definition: GND、VCC、SDA、SCL
+Backlight: Blue
+Supply voltage: 5V
+Contrast Adjust: Potentiometer
+Backlight Adjust: Jumper
+
+PACKAGE INCLUDES
+1 x I2C 16x2 Arduino LCD Display Module - White on Blue 5V (1602A)
+
+Everyone love the 1602 character LCD, is cheap and works out of box! But the need for 6 to 10 GPIOs is the pain :) It takes most of GPIO of Arduino and other microcontroller. 
+Now with this I2C or Two wires interface LCD, you will save a lot of GPIO for your sensor and motor control.
+
+This is a great blue backlight LCD display. As the pin resources of Arduino controller is limited, your project may be not able to use normal 
+LCD shield after connected with a certain quantity of sensors or SD card. However, with this I2C interface LCD module, you will be able to realize data display via only 2 wires. 
+If you already has I2C devices in your project, you can still program this LCD with the correct I2C address. It is fantastic for Arduino based project. 
+
+Note: If the display is not clear (or blank), try to adjust the contrast level by tuning the on-board potentiometer.
+
+Features:
+I2C Address: 0x27 
+Backlight (White character on Blue background) 
+Supply voltage: 5V 
+Size: 82x35x18 mm 
+Come with I2C interface
