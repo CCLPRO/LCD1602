@@ -29,7 +29,7 @@ void loop() {
     digitalWrite(i,HIGH);
   }
  
-  delay(1000); //Delay 1 second, try whether can omit this line
+ 
   
 // countdown display 9
   digitalWrite(ledPinA, LOW);   // set the LED on
@@ -180,45 +180,41 @@ void loop() {
   {
     digitalWrite(i,HIGH);
   }
+  
   if (int i = 8) {
   for (int i = 8; i < 20; i++) {
   
-  // to change fro fade in to fade out or constant on, change LED green to red or yellow
-   // fade in from min to max in increments of 5 points:
-  for (int fadeValue = 0 ; fadeValue <= 255; fadeValue += 50) {
-    // sets the value (range from 0 to 255):
+  for (int fadeValue = 200 ; fadeValue <= 255; fadeValue += 50) {
+   
   analogWrite(ledPin, fadeValue);
-    // wait for 30 milliseconds to see the dimming effect
-    //delay(30)// display greeting on LCD
-//  lcd.clear();
+  
   lcd.backlight();
   lcd.setCursor(0,0);
   lcd.print("WISHING YOU ALL ");
   lcd.setCursor(0,1);
   lcd.print("A HAPPY AND");
   
-  delay(1500);
+  delay(2000);
    lcd.clear();
    lcd.setCursor(0,0);
    lcd.print("PROSPEROUS");
    lcd.setCursor(0,1);
    lcd.print("CHINESE NEW YEAR");
-   delay(1500);
+   delay(2000);
    lcd.clear();
-  }
-
-  // fade out from max to min in increments of 5 points:
-  for (int fadeValue = 255 ; fadeValue >= 0; fadeValue -= 50) {
-    // sets the value (range from 0 to 255):
-    analogWrite(ledPin, fadeValue);
-    // wait for 5 milliseconds to see the dimming effect
-  //delay(30); 
  
-  // Print a message to the LCD.
+   lcd.setCursor(0,0);
+   lcd.print("STAY SAFE AND");
+   lcd.setCursor(0,1);
+   lcd.print("STAY HEALTHY");
+   delay(2000);
+   lcd.clear();  
+  }
+   for (int fadeValue = 255 ; fadeValue >= 200; fadeValue -= 50) {
+    
+    analogWrite(ledPin, fadeValue);
    
    }
   }
  }
 }
-
- 
