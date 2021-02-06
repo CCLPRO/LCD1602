@@ -29,8 +29,7 @@ void loop() {
     digitalWrite(i,HIGH);
   }
  
- 
-  
+   
 // countdown display 9
   digitalWrite(ledPinA, LOW);   // set the LED on
   digitalWrite(ledPinB, LOW);   // set the LED on
@@ -176,13 +175,13 @@ void loop() {
   delay(1000); //Delay 1 second
   
 // for loop to turn off the 7 segment LEDs  
-  for(int i=2;i<9;i++)
-  {
-    digitalWrite(i,HIGH);
-  }
+//  for(int i=2;i<9;i++)
+//  {
+//    digitalWrite(i,HIGH);
+ // }
   
   if (int i = 8) {
-  for (int i = 8; i < 20; i++) {
+  for (int i = 8; i < 30; i++) {
   
   for (int fadeValue = 200 ; fadeValue <= 255; fadeValue += 50) {
    
@@ -194,21 +193,37 @@ void loop() {
   lcd.setCursor(0,1);
   lcd.print("A HAPPY AND");
   
-  delay(2000);
+  delay(3000);
    lcd.clear();
    lcd.setCursor(0,0);
    lcd.print("PROSPEROUS");
    lcd.setCursor(0,1);
    lcd.print("CHINESE NEW YEAR");
-   delay(2000);
+   delay(3000);
    lcd.clear();
  
    lcd.setCursor(0,0);
    lcd.print("STAY SAFE AND");
    lcd.setCursor(0,1);
    lcd.print("STAY HEALTHY");
-   delay(2000);
+   delay(3000);
    lcd.clear();  
+
+   lcd.setCursor(0,0);
+   lcd.print("WEAR MASK, USE");
+   lcd.setCursor(0,1);
+   lcd.print("HAND SANITIZER");
+   delay(3000);
+   lcd.clear();  
+
+   lcd.setCursor(0,0);
+   lcd.print("KEEP EXERCISING");
+   lcd.setCursor(0,1);
+   lcd.print("REGULARLY");
+   delay(3000);
+   lcd.clear();  
+
+   
   }
    for (int fadeValue = 255 ; fadeValue >= 200; fadeValue -= 50) {
     
@@ -218,3 +233,6 @@ void loop() {
   }
  }
 }
+
+
+ 
